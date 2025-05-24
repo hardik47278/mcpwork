@@ -17,7 +17,7 @@ jobs:
       - name: Pull from hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git pull --ff-only https://hardik1247:$HF_TOKEN@huggingface.co/spaces/hardik1247/Search_Engine_llm main
+        run: git pull --rebase https://hardik1247:$HF_TOKEN@huggingface.co/spaces/hardik1247/Search_Engine_llm main
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
