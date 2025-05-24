@@ -29,4 +29,4 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git push https://hardik1247:$HF_TOKEN@huggingface.co/spaces/hardik1247/Search_Engine_llm main
+          git push --verbose https://hardik1247:$HF_TOKEN@huggingface.co/spaces/hardik1247/Search_Engine_llm main
